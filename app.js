@@ -2,7 +2,7 @@ const { createServer } = require('node:http');
 const fs = require('fs');
 
 const hostname = '16.171.176.106';
-const port = process.env.PORT || 3000;
+const port = 80 || 3000;
 
 const server = createServer((req, res) => {
     const url = req.url;
